@@ -1,5 +1,10 @@
-stage('Build') {
-    steps {
-        powershell 'mvn clean install'
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
     }
 }
